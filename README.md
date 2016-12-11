@@ -16,6 +16,6 @@ All the distributions tested were at their latest versions (or close enough).
  
 ## .rpm:
 ### Tested Distributions:
-* Fedora
-* OpenSUSE:
+* Fedora (Does not currently work but the package was built on Fedora)
+* OpenSUSE (It works but the bin directory is missing):
  * Notes: Once again the choice of desktop enviroment was GNOME.
