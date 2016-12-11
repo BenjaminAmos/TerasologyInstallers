@@ -4,7 +4,7 @@ This repository contains installers for various different Linux distributions to
 All the distributions tested were at their latest versions (or close enough).
 
 # Packages:
-  * [.deb](README.md#.deb)
+  * .deb
   
 
 ## .deb:  
