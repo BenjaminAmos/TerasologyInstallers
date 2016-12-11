@@ -12,7 +12,7 @@ All the distributions tested were at their latest versions (or close enough).
 * Ubuntu
 * Debian (the original)
  * Notes:
- The GNOME desktop enviroment was used but the package manager installed perfectly so any GUI could work potentially.
+ The GNOME desktop enviroment was used but the package manager installed it perfectly so any GUI could work potentially.
 
 ### Notes:
  The package installs to a folder called Terasology Launcher under the main drive (root directory?).
