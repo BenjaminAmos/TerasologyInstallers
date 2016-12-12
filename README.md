@@ -29,11 +29,10 @@ All the distributions tested were at their latest versions (or close enough).
 
 ## .snap
 ### Tested Distributions:
-* Fedora
 * OpenSUSE (broken)
  * Notes: This is currently not working as with snap packages in general (the operating system supports them supposedly)
 * Ubuntu
-* Debain (the original (weekly build))
+* Debain (the original (weekly build/unstable))
 
 ### Notes:
- Ubuntu generated and installed the packages perfectly but is also the only one to support them in a stable release. OpenSUSE had a broken snap command-line interface when I tried it.
+ Ubuntu generated and installed the packages perfectly but is also the only one to support them in a stable release. OpenSUSE had a broken snap command-line interface when I tried it and Fedora refuses to install the programs needed to use snap packages.
