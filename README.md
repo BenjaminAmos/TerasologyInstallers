@@ -6,6 +6,7 @@ All the distributions tested were at their latest versions (or close enough).
 # Packages:
   * .deb
   * .rpm
+  * .snap
 
 ## .deb:  
 ### Tested Distributions:
@@ -25,3 +26,14 @@ All the distributions tested were at their latest versions (or close enough).
 
 ### Notes:
  The package installs to usr/bin/terasology-launcher-3.10 but has a missing bin directory. To start the launcher you will have to  launch the Terasology.jar file in the libs folder manually.
+
+## .snap
+### Tested Distributions:
+* Fedora
+* OpenSUSE (broken)
+ * Notes: This is currently not working as with snap packages in general (the operating system supports them supposedly)
+* Ubuntu
+* Debain (the original (weekly build))
+
+### Notes:
+ Ubuntu generated and installed the packages perfectly but is also the only one to support them in a stable release. OpenSUSE had a broken snap command-line interface when I tried it.
