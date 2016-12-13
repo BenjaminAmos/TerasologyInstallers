@@ -1,7 +1,7 @@
 # TerasologyInstallers
 This repository contains installers for various different Linux distributions to install Terasology.
 
-All the distributions tested were at their latest versions (or close enough) inside a fresh virtual machine (exept Ubuntu because that was just reused from before).
+All the distributions tested were at their latest versions (or close enough) inside a fresh virtual machine.
 
 # Packages:
   * .deb
