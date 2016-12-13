@@ -13,7 +13,7 @@ All the distributions tested were at their latest versions (or close enough) ins
 * Ubuntu 16.10
 * Debian (the original) GNU/Linux 8 (jessie)
  * Notes:
- The GNOME desktop enviroment was used but the package manager installed it perfectly so any GUI could work potentially.
+ The GNOME desktop enviroment was used but due to missing dependencies (debian does nor yet have openjdk-8) you must install the package by using __________
 
 ### Notes:
  The package installs to a folder called Terasology Launcher under the main drive (root directory?).
