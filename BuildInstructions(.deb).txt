@@ -1,5 +1,7 @@
 Create a .tar.gz file called terasology-launcher-3.1.0.tar.gz from the modified Terasology Launcher files located at https://github.com/BenjaminAmos/TerasologyInstallers/blob/master/TerasologyLauncher.zip.
 
+Convert the .zip file to a .tar.gz file by uncompressing it then compressing it again into the .tar.gz format.
+
 Start off by generating the files from the tar.gz: Use the command "sudo alien -k terasology-launcher-3.1.0.tar.gz -g -c --fixperms" (without the quotes).
 
 Now run the command: "bzr dh-make terasology-launcher 3.1.0 terasology-launcher-3.1.0.tar.gz
@@ -13,7 +15,7 @@ Then copy the rules file from terasology-launcher-3.1.0/debain into terasology-l
 
 Delete the terasology-launcher-3.1.0 folder (requires root).
 
-Edit the copyright file to change the license to Apache-2.0 and edit the control file to add the name, summary and description. The settings I used are as follows:
+Edit the copyright file to change the license to Apache-2.0 and edit the control file to add the name, summary and description. The settings I used in the control file are as follows:
 
 Source: terasology-launcher
 Section: unknown
