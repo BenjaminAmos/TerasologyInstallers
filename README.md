@@ -1,7 +1,7 @@
 # TerasologyInstallers
 This repository contains installers for various different Linux distributions to install Terasology.
 
-All the distributions tested were at their latest versions (or close enough).
+All the distributions tested were at their latest versions (or close enough) inside a fresh virtual machine (exept Ubuntu because that was just reused from before).
 
 # Packages:
   * .deb
@@ -10,8 +10,8 @@ All the distributions tested were at their latest versions (or close enough).
 
 ## .deb:  
 ### Tested Distributions:
-* Ubuntu
-* Debian (the original)
+* Ubuntu 16.10
+* Debian (the original) GNU/Linux 8 (jessie)
  * Notes:
  The GNOME desktop enviroment was used but the package manager installed it perfectly so any GUI could work potentially.
 
@@ -31,8 +31,7 @@ All the distributions tested were at their latest versions (or close enough).
 ### Tested Distributions:
 * OpenSUSE (broken)
  * Notes: This is currently not working as with snap packages in general (the operating system supports them supposedly)
-* Ubuntu
-* Debain (the original (weekly build/unstable))
+* Ubuntu 16.10
 
 ### Notes:
- Ubuntu generated and installed the packages perfectly but is also the only one to support them in a stable release. OpenSUSE had a broken snap command-line interface when I tried it and Fedora refuses to install the programs needed to use snap packages.
+ Ubuntu generated and installed the packages perfectly but is also the only one to support them in a stable release. OpenSUSE had a broken snap command-line interface when I tried it and Fedora refuses to install the programs needed to use snap packages. Debain's latest weekly build is required supposedly for snap files but for me the build refused to boot properly.
