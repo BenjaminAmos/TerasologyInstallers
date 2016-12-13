@@ -1,0 +1,40 @@
+Create a .tar.gz file called terasology-launcher-3.1.0.tar.gz from the modified Terasology Launcher files located at https://github.com/BenjaminAmos/TerasologyInstallers/blob/master/TerasologyLauncher.zip.
+
+Start off by generating the files from the tar.gz: Use the command "sudo alien -k terasology-launcher-3.1.0.tar.gz -g -c --fixperms" (without the quotes).
+
+Now run the command: "bzr dh-make terasology-launcher 3.1.0 terasology-launcher-3.1.0.tar.gz
+". The command will generate a terasology-launcher folder and populate it with the files needed to build the deb.
+
+As suggested in the documentation cd into terasology-launcher/debian/ and then type: "rm *ex *EX".
+
+Rename the rules file in terasology-launcher/debian to rules.old.
+
+Then copy the rules file from terasology-launcher-3.1.0/debain into terasology-launcher/debain.
+
+Delete the terasology-launcher-3.1.0 folder (requires root).
+
+Edit the copyright file to change the license to Apache-2.0 and edit the control file to add the name, summary and description. The settings I used are as follows:
+
+Source: terasology-launcher
+Section: unknown
+Priority: optional
+Maintainer: User <user@unknown>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.8
+Homepage: http://terasology.org
+#Vcs-Git: git://anonscm.debian.org/collab-maint/terasology-launcher.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/terasology-launcher.git
+
+Package: terasology-launcher
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: This is the launcher for Terasology
+ Terasology is a minecraft-like game where you can create and destroy blocks.
+
+Once done, run the command "bzr builddeb -- -us -uc" to build the .deb file. Ignore the warnings, it works perfectly anyway.
+
+Double click on the produced deb in the build-area folder to install it. It should install the application to /opt.
+
+Run the launcher to see if it works.
+
+If you need to remove the package then just run the command: "sudo apt-get remove terasology-launcher".
