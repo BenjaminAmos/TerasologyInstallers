@@ -13,7 +13,8 @@ All the distributions tested were at their latest versions (or close enough) ins
 * Ubuntu 16.10
 * Debian (the original) GNU/Linux 8 (jessie)
  * Notes:
- The GNOME desktop enviroment was used but due to missing dependencies (debian does nor yet have openjdk-8) you must install the package by using ` dpkg --install --ignore-depends openjdk-8-jre "terasology-launcher_3.1.0-1_all(1).deb" ` in the directory of the package file. To then run the launcher, you must install java-8 manually as well as javafx.
+ The GNOME desktop enviroment was used but due to missing dependencies (debian does nor yet have openjdk-8) you must install the package by using ` dpkg --install --ignore-depends openjdk-8-jre --ignore-depends openjfx "terasology-launcher_3.1.0-1_all.deb"
+ ` in the directory of the package file. To then run the launcher, you must install java-8 manually as well as javafx.
 
 ### Notes:
  The package installs to a folder called Terasology Launcher under the main drive (root directory?).
